@@ -57,6 +57,7 @@ class Kernel extends HttpKernel
         'member'          => \App\Http\Middleware\RedirectIfNotGroupMember::class,
         'verified'        => \App\Http\Middleware\Verified::class,
         'cache'           => \App\Http\Middleware\Cache::class,
+		'token' 		  => \Furdarius\OIDConnect\TokenMiddleware::class,
         'admin'           => \App\Http\Middleware\Admin::class,
         'groupadmin'      => \App\Http\Middleware\GroupAdmin::class,
         'public'          => \App\Http\Middleware\RedirectIfNotGroupMemberOrPublicGroup::class,

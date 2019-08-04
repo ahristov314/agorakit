@@ -162,10 +162,12 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+		Laravel\Socialite\SocialiteServiceProvider::class,
+		Furdarius\OIDConnect\ServiceProvider::class,
         /*
         * Application Service Providers...
         */
+		App\Auth\AuthenticatorServiceProvider::class,
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
